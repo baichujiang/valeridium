@@ -1,3 +1,11 @@
+/**
+ * Company data — display rules (avoid duplicating statutory detail everywhere):
+ * - Home: legal name + country + one-line registry hint; link to About for full record.
+ * - About: canonical table (all registry, activity codes, representative, email, URL).
+ * - Contact: how to reach + entity identification (name, form, registry, office, website).
+ * - Footer: sitewide imprint (name, registry, country, email, registered office, website);
+ *   NACE/EMTAK/representative → About only.
+ */
 export const company = {
   legalName: "Valeridium OÜ",
   registryCode: "17473866",

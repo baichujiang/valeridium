@@ -42,12 +42,6 @@ const steps = [
   },
 ] as const;
 
-const trustItems = [
-  { label: "Estonia OÜ", detail: company.registryCode },
-  { label: "NACE", detail: company.nace },
-  { label: "EMTAK", detail: company.emtak },
-] as const;
-
 export default function HomePage() {
   return (
     <>
@@ -84,17 +78,19 @@ export default function HomePage() {
                 Contact us
               </Link>
             </div>
-            <ul className="mt-10 flex flex-wrap gap-3">
-              {trustItems.map(({ label, detail }) => (
-                <li
-                  key={label}
-                  className="flex items-baseline gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-2.5 text-sm backdrop-blur-sm"
-                >
-                  <span className="font-semibold text-foreground">{label}</span>
-                  <span className="font-mono text-xs text-muted">{detail}</span>
-                </li>
-              ))}
-            </ul>
+            <p className="mt-10 max-w-lg text-sm leading-relaxed text-muted">
+              <span className="text-foreground/90">Estonia-registered company.</span>{" "}
+              Commercial register:{" "}
+              <span className="font-mono text-muted">{company.registryCode}</span>
+              .{" "}
+              <Link
+                href="/about"
+                className="font-medium text-sky-400 underline-offset-2 hover:text-sky-300 hover:underline"
+              >
+                Full legal &amp; registry details
+              </Link>{" "}
+              (NACE, EMTAK, representative) are listed there.
+            </p>
           </div>
           <HeroVisual />
         </div>

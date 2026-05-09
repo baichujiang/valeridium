@@ -19,18 +19,17 @@ export function SiteFooter() {
                   {company.legalName}
                 </p>
                 <p className="mt-2 max-w-sm text-sm leading-relaxed text-navy-muted">
-                  Software development, web development, and e-commerce operation
-                  support for business clients. Registered in {company.country}.
+                  Software and web development for business clients.
                 </p>
               </div>
             </div>
-            <dl className="mt-6 space-y-2 text-sm">
+            <dl className="mt-6 space-y-3 text-sm">
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
                   Registry
                 </dt>
                 <dd className="font-mono text-sm text-white/90">
-                  {company.registryCode}
+                  {company.registryCode} · {company.country}
                 </dd>
               </div>
               <div>
@@ -46,7 +45,34 @@ export function SiteFooter() {
                   </a>
                 </dd>
               </div>
+              <div>
+                <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
+                  Registered office
+                </dt>
+                <dd className="text-sm leading-relaxed text-white/75">
+                  {company.address}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
+                  Website
+                </dt>
+                <dd>
+                  <a
+                    href={company.website}
+                    className="text-sky-400 underline-offset-2 hover:text-sky-300 hover:underline"
+                  >
+                    {company.website}
+                  </a>
+                </dd>
+              </div>
             </dl>
+            <p className="mt-5 text-xs text-navy-muted">
+              Industry codes (NACE / EMTAK) and management details:{" "}
+              <Link href="/about" className="text-sky-400/90 hover:text-sky-300">
+                About — Company information
+              </Link>
+            </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7">
             <div>
@@ -85,28 +111,25 @@ export function SiteFooter() {
             </div>
             <div className="col-span-2 sm:col-span-1">
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                Registered office
+                Verification
               </p>
               <p className="mt-4 text-sm leading-relaxed text-white/75">
-                {company.address}
-              </p>
-              <p className="mt-3 text-sm">
-                <a
-                  href={company.website}
-                  className="text-sky-400 underline-offset-2 hover:text-sky-300 hover:underline"
-                >
-                  {company.website}
-                </a>
+                For payment providers and platforms: use{" "}
+                <Link href="/about" className="text-sky-400 hover:text-sky-300">
+                  About
+                </Link>{" "}
+                for the complete company record; use{" "}
+                <Link href="/contact" className="text-sky-400 hover:text-sky-300">
+                  Contact
+                </Link>{" "}
+                for inquiries.
               </p>
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 text-center sm:flex-row sm:text-left">
+        <div className="mt-12 border-t border-white/[0.06] pt-8 text-center sm:text-left">
           <p className="text-xs text-navy-muted">
             © 2026 {company.legalName}. All rights reserved.
-          </p>
-          <p className="text-xs text-navy-muted">
-            NACE {company.nace} · EMTAK {company.emtak}
           </p>
         </div>
       </div>

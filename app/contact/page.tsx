@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { company } from "@/lib/company";
 
@@ -16,59 +17,76 @@ export default function ContactPage() {
       />
       <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-white/[0.08] bg-surface p-6 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-10">
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
-            Contact information
-          </h2>
-          <ul className="mt-8 space-y-6">
-            <li>
-              <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
-                Email
-              </span>
+          <section>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
+              Primary contact
+            </h2>
+            <p className="mt-3">
               <a
                 href={`mailto:${company.email}`}
-                className="mt-2 inline-block text-lg font-semibold text-sky-400 transition-colors hover:text-sky-300"
+                className="text-lg font-semibold text-sky-400 transition-colors hover:text-sky-300"
               >
                 {company.email}
               </a>
-            </li>
-            <li className="grid gap-6 border-t border-white/[0.06] pt-6 sm:grid-cols-2">
+            </p>
+          </section>
+
+          <section className="mt-10 border-t border-white/[0.06] pt-10">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
+              Legal entity (for your records)
+            </h2>
+            <dl className="mt-4 space-y-4 text-sm">
               <div>
-                <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
-                  Company
-                </span>
-                <span className="mt-2 block text-sm font-medium text-foreground">
+                <dt className="text-muted-light">Company name</dt>
+                <dd className="mt-1 font-medium text-foreground">
                   {company.legalName}
-                </span>
+                </dd>
               </div>
               <div>
-                <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
-                  Registry code
-                </span>
-                <span className="mt-2 block font-mono text-sm font-medium text-foreground">
-                  {company.registryCode}
-                </span>
+                <dt className="text-muted-light">Legal form</dt>
+                <dd className="mt-1 text-foreground/95">{company.legalForm}</dd>
               </div>
-            </li>
-            <li className="border-t border-white/[0.06] pt-6">
-              <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
-                Registered address
-              </span>
-              <span className="mt-2 block text-sm leading-relaxed text-muted">
-                {company.address}
-              </span>
-            </li>
-            <li className="border-t border-white/[0.06] pt-6">
-              <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
-                Website
-              </span>
+              <div>
+                <dt className="text-muted-light">Registry code</dt>
+                <dd className="mt-1 font-mono text-foreground">
+                  {company.registryCode}
+                </dd>
+              </div>
+            </dl>
+          </section>
+
+          <section className="mt-10 border-t border-white/[0.06] pt-10">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
+              Registered office
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              {company.address}
+            </p>
+            <p className="mt-3 text-xs text-muted-light">
+              Full statutory details (activity codes, representative):{" "}
+              <Link
+                href="/about"
+                className="font-medium text-sky-400 hover:text-sky-300"
+              >
+                Company information
+              </Link>
+              .
+            </p>
+          </section>
+
+          <section className="mt-10 border-t border-white/[0.06] pt-10">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
+              Website
+            </h2>
+            <p className="mt-3">
               <a
                 href={company.website}
-                className="mt-2 inline-block text-sm font-medium text-sky-400 transition-colors hover:text-sky-300"
+                className="text-sm font-medium text-sky-400 transition-colors hover:text-sky-300"
               >
                 {company.website}
               </a>
-            </li>
-          </ul>
+            </p>
+          </section>
         </div>
       </div>
     </>

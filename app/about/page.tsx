@@ -44,7 +44,15 @@ export default function AboutPage() {
         <h2 className="mt-14 text-xs font-semibold uppercase tracking-wider text-muted-light">
           Company information
         </h2>
-        <dl className="mt-4 rounded-2xl border border-white/[0.08] bg-surface p-5 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-8">
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+          This is the complete public company record for business verification,
+          contracts, and platform onboarding. For day-to-day inquiries, use{" "}
+          <a href="/contact" className="font-medium text-sky-400 hover:text-sky-300">
+            Contact
+          </a>
+          .
+        </p>
+        <dl className="mt-6 rounded-2xl border border-white/[0.08] bg-surface p-5 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-8">
           <Row label="Company name" value={company.legalName} />
           <Row label="Registry code" value={company.registryCode} />
           <Row label="Legal form" value={company.legalForm} />
