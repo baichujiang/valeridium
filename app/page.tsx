@@ -49,15 +49,7 @@ export default function HomePage() {
         <HeroPattern />
         <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
           <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center rounded-full border border-white/[0.1] bg-white/[0.04] px-3 py-1 text-xs font-medium text-muted backdrop-blur-sm">
-                {company.legalName}
-              </span>
-              <span className="text-xs font-medium text-muted-light">
-                {company.country}
-              </span>
-            </div>
-            <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl sm:leading-[1.08]">
+            <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl sm:leading-[1.08]">
               Digital services for modern online businesses
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
@@ -78,19 +70,6 @@ export default function HomePage() {
                 Contact us
               </Link>
             </div>
-            <p className="mt-10 max-w-lg text-sm leading-relaxed text-muted">
-              <span className="text-foreground/90">Estonia-registered company.</span>{" "}
-              Commercial register:{" "}
-              <span className="font-mono text-muted">{company.registryCode}</span>
-              .{" "}
-              <Link
-                href="/about"
-                className="font-medium text-sky-400 underline-offset-2 hover:text-sky-300 hover:underline"
-              >
-                Full legal &amp; registry details
-              </Link>{" "}
-              (NACE, EMTAK, representative) are listed there.
-            </p>
           </div>
           <HeroVisual />
         </div>

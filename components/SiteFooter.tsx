@@ -9,72 +9,28 @@ export function SiteFooter() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-500/40 to-transparent"
         aria-hidden
       />
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-5">
-            <div className="flex items-start gap-3">
-              <LogoMark variant="onDark" />
-              <div>
-                <p className="text-base font-semibold text-white">
-                  {company.legalName}
-                </p>
-                <p className="mt-2 max-w-sm text-sm leading-relaxed text-navy-muted">
-                  Software and web development for business clients.
-                </p>
-              </div>
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+          <div className="flex items-start gap-3 lg:col-span-4">
+            <LogoMark variant="onDark" />
+            <div>
+              <p className="text-base font-semibold text-white">
+                {company.legalName}
+              </p>
+              <p className="mt-2 max-w-xs text-sm leading-relaxed text-navy-muted">
+                Software and web development for business clients.
+              </p>
+              <p className="mt-4">
+                <a
+                  href={`mailto:${company.email}`}
+                  className="text-sm font-medium text-sky-300 hover:text-sky-200"
+                >
+                  {company.email}
+                </a>
+              </p>
             </div>
-            <dl className="mt-6 space-y-3 text-sm">
-              <div>
-                <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                  Registry
-                </dt>
-                <dd className="font-mono text-sm text-white/90">
-                  {company.registryCode} · {company.country}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                  Email
-                </dt>
-                <dd>
-                  <a
-                    href={`mailto:${company.email}`}
-                    className="text-sky-300 transition-colors hover:text-sky-200"
-                  >
-                    {company.email}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                  Registered office
-                </dt>
-                <dd className="text-sm leading-relaxed text-white/75">
-                  {company.address}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                  Website
-                </dt>
-                <dd>
-                  <a
-                    href={company.website}
-                    className="text-sky-400 underline-offset-2 hover:text-sky-300 hover:underline"
-                  >
-                    {company.website}
-                  </a>
-                </dd>
-              </div>
-            </dl>
-            <p className="mt-5 text-xs text-navy-muted">
-              Industry codes (NACE / EMTAK) and management details:{" "}
-              <Link href="/about" className="text-sky-400/90 hover:text-sky-300">
-                About — Company information
-              </Link>
-            </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
                 Pages
@@ -111,23 +67,40 @@ export function SiteFooter() {
             </div>
             <div className="col-span-2 sm:col-span-1">
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                Verification
+                Company record
               </p>
               <p className="mt-4 text-sm leading-relaxed text-white/75">
-                For payment providers and platforms: use{" "}
+                Full registry and statutory details (NACE, EMTAK, representative)
+                are on the{" "}
                 <Link href="/about" className="text-sky-400 hover:text-sky-300">
                   About
                 </Link>{" "}
-                for the complete company record; use{" "}
-                <Link href="/contact" className="text-sky-400 hover:text-sky-300">
-                  Contact
-                </Link>{" "}
-                for inquiries.
+                page.
               </p>
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-white/[0.06] pt-8 text-center sm:text-left">
+
+        <div className="mt-12 space-y-4 border-t border-white/[0.06] pt-8">
+          <p className="text-[11px] leading-relaxed text-navy-muted">
+            <span className="text-white/50">Legal imprint.</span>{" "}
+            {company.legalName}. Commercial register:{" "}
+            <span className="font-mono text-white/45">{company.registryCode}</span>
+            . {company.country}. Registered office: {company.address} ·{" "}
+            <a
+              href={`mailto:${company.email}`}
+              className="text-sky-500/80 hover:text-sky-400"
+            >
+              {company.email}
+            </a>{" "}
+            ·{" "}
+            <a
+              href={company.website}
+              className="text-sky-500/80 hover:text-sky-400"
+            >
+              {company.website.replace(/^https?:\/\//, "")}
+            </a>
+          </p>
           <p className="text-xs text-navy-muted">
             © 2026 {company.legalName}. All rights reserved.
           </p>

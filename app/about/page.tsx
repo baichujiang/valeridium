@@ -24,7 +24,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         title={`About ${company.legalName}`}
-        description="Estonia-registered private limited company focused on software development, web development, and digital business services."
+        description="Who we are and what we do. Formal registry and statutory details are in the section below — intended for verification and contracts, not general browsing."
       />
       <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="space-y-4 text-base leading-relaxed text-muted">
