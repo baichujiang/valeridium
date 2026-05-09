@@ -52,12 +52,12 @@ export function SiteHeader() {
               );
             })}
           </nav>
-          <Link
-            href="/contact"
+          <a
+            href={`mailto:${company.email}`}
             className="ml-1 hidden rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 px-3.5 py-2 text-sm font-semibold text-white shadow-md shadow-sky-500/20 transition-opacity hover:opacity-95 sm:inline-flex"
           >
             Get in touch
-          </Link>
+          </a>
         </div>
       </div>
     </header>
