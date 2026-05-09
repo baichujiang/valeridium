@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "vercel:preview": "dotenv -e .env.local -- vercel",
-    "vercel:deploy": "dotenv -e .env.local -- vercel --prod"
+    "vercel:preview": "dotenv -e .env.local -- vercel --yes",
+    "vercel:deploy": "dotenv -e .env.local -- vercel --prod --yes"
   },
   "dependencies": {
     "next": "16.2.6",
