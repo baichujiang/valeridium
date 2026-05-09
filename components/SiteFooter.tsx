@@ -10,14 +10,14 @@ export function SiteFooter() {
         aria-hidden
       />
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-          <div className="flex items-start gap-3 lg:col-span-4">
+        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
+          <div className="flex max-w-sm items-start gap-3">
             <LogoMark variant="onDark" />
             <div>
               <p className="text-base font-semibold text-white">
                 {company.legalName}
               </p>
-              <p className="mt-2 max-w-xs text-sm leading-relaxed text-navy-muted">
+              <p className="mt-2 text-sm leading-relaxed text-navy-muted">
                 Software and web development for business clients.
               </p>
               <p className="mt-4">
@@ -30,7 +30,7 @@ export function SiteFooter() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8">
+          <div className="flex flex-wrap gap-10 sm:gap-16 lg:gap-20">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
                 Pages
@@ -64,19 +64,6 @@ export function SiteFooter() {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="col-span-2 sm:col-span-1">
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                Company record
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-white/75">
-                Full registry and statutory details (NACE, EMTAK, representative)
-                are on the{" "}
-                <Link href="/about" className="text-sky-400 hover:text-sky-300">
-                  About
-                </Link>{" "}
-                page.
-              </p>
             </div>
           </div>
         </div>

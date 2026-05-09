@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { company } from "@/lib/company";
 
@@ -27,14 +26,6 @@ export default function ContactPage() {
             >
               {company.email}
             </a>
-          </p>
-          <p className="mt-8 text-sm leading-relaxed text-muted">
-            Registry numbers, registered office, and other statutory information
-            are in the site footer and on the{" "}
-            <Link href="/about" className="font-medium text-sky-400 hover:text-sky-300">
-              About
-            </Link>{" "}
-            page — not repeated here.
           </p>
         </div>
       </div>
