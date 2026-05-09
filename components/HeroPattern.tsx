@@ -1,48 +1,30 @@
-/** Abstract grid pattern for hero sections — no stock imagery. */
+/** Layered mesh + grid — abstract technology visual. */
 export function HeroPattern() {
-  const step = 40;
-  const coords: { x: number; y: number }[] = [];
-  for (let x = 0; x <= 360; x += step) {
-    for (let y = 0; y <= 360; y += step) {
-      coords.push({ x: x + 20, y: y + 20 });
-    }
-  }
-
   return (
-    <div
-      className="pointer-events-none absolute inset-0 overflow-hidden opacity-[0.35]"
-      aria-hidden
-    >
+    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_80%_at_50%_-40%,rgba(37,99,235,0.14),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_100%_0%,rgba(37,99,235,0.08),transparent_45%)]" />
       <svg
-        className="absolute -right-8 -top-8 h-[420px] w-[420px] text-accent/20 sm:right-0 sm:top-0"
-        viewBox="0 0 400 400"
-        fill="none"
+        className="absolute left-1/2 top-0 h-full w-[min(100%,80rem)] -translate-x-1/2 opacity-[0.4]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id="hero-g" x1="0" y1="0" x2="400" y2="400">
-            <stop stopColor="currentColor" stopOpacity="0.5" />
-            <stop offset="1" stopColor="currentColor" stopOpacity="0" />
-          </linearGradient>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="rgb(148 163 184)"
+              strokeWidth="0.5"
+              opacity="0.35"
+            />
+          </pattern>
         </defs>
-        <rect width="400" height="400" fill="url(#hero-g)" />
-        {coords.map(({ x, y }) => (
-          <circle key={`${x}-${y}`} cx={x} cy={y} r="1.5" className="fill-accent/40" />
-        ))}
-        <path
-          d="M40 320 Q200 80 360 200"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          className="text-accent/30"
-          fill="none"
-        />
-        <path
-          d="M60 360 Q220 120 380 240"
-          stroke="currentColor"
-          strokeWidth="1"
-          className="text-accent/20"
-          fill="none"
-        />
+        <rect width="100%" height="100%" fill="url(#hero-grid)" />
       </svg>
     </div>
   );

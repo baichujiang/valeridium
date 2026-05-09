@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageHeader } from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -27,23 +28,35 @@ const sections = [
 
 export default function ServicesPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-        Our Services
-      </h1>
-      <p className="mt-4 text-sm text-muted">
-        Clear, documented service areas for business clients.
-      </p>
-      <div className="mt-12 space-y-12">
-        {sections.map(({ title, body }, i) => (
-          <section key={title}>
-            <h2 className="text-lg font-semibold text-foreground">
-              {i + 1}. {title}
-            </h2>
-            <p className="mt-3 text-base leading-relaxed text-muted">{body}</p>
-          </section>
-        ))}
+    <>
+      <PageHeader
+        title="Our services"
+        description="Clear, documented service areas for business clients. Engagements are typically scoped in writing before work begins."
+      />
+      <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="space-y-6">
+          {sections.map(({ title, body }, i) => (
+            <section
+              key={title}
+              className="rounded-2xl border border-border bg-surface p-6 shadow-[var(--card-shadow)] sm:p-8"
+            >
+              <div className="flex gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-subtle text-sm font-bold text-accent ring-1 ring-accent/15">
+                  {i + 1}
+                </span>
+                <div>
+                  <h2 className="text-lg font-semibold tracking-tight text-foreground">
+                    {title}
+                  </h2>
+                  <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+                    {body}
+                  </p>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

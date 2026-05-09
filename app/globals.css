@@ -1,14 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafbfc;
+  --background: #f4f6f9;
   --surface: #ffffff;
-  --foreground: #1e293b;
-  --muted: #64748b;
+  --foreground: #0f172a;
+  --muted: #475569;
+  --muted-light: #94a3b8;
   --border: #e2e8f0;
-  --accent: #1d4ed8;
-  --accent-hover: #1e40af;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
   --accent-subtle: #eff6ff;
+  --accent-ring: rgba(37, 99, 235, 0.25);
+  --navy: #0c1222;
+  --navy-muted: #94a3b8;
+  --card-shadow: 0 1px 2px rgba(15, 23, 42, 0.04),
+    0 4px 24px rgba(15, 23, 42, 0.06);
+  --card-shadow-hover: 0 4px 12px rgba(15, 23, 42, 0.06),
+    0 16px 40px rgba(15, 23, 42, 0.08);
 }
 
 @theme inline {
@@ -16,16 +24,21 @@
   --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-subtle: var(--accent-subtle);
-  --font-sans: var(--font-geist-sans);
+  --color-navy: var(--navy);
+  --color-navy-muted: var(--navy-muted);
+  --font-sans: var(--font-plus-jakarta), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
+  --shadow-card: var(--card-shadow);
+  --shadow-card-hover: var(--card-shadow-hover);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
 }

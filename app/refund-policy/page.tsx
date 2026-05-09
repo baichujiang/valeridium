@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { PageHeader } from "@/components/PageHeader";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ function Section({
 }) {
   return (
     <section className="mt-10">
-      <h2 className="text-lg font-semibold text-foreground">{title}</h2>
+      <h2 className="text-xl font-semibold tracking-tight text-foreground">{title}</h2>
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-muted">
         {children}
       </div>
@@ -27,14 +28,13 @@ function Section({
 
 export default function RefundPolicyPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-        Refund Policy
-      </h1>
-      <p className="mt-2 text-sm text-muted">
-        Last updated: May 9, 2026 · {company.legalName}
-      </p>
-      <p className="mt-6 text-sm leading-relaxed text-muted">
+    <>
+      <PageHeader
+        title="Refund Policy"
+        description={`Last updated: May 9, 2026 · ${company.legalName}`}
+      />
+      <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+      <p className="text-sm leading-relaxed text-muted">
         This Refund Policy applies to project-based software and digital services
         provided by {company.legalName}. Specific engagements may include
         additional terms in a written agreement.
@@ -95,10 +95,11 @@ export default function RefundPolicyPage() {
       </Section>
 
       <p className="mt-12 text-sm text-muted">
-        <Link href="/" className="text-accent hover:text-accent-hover">
-          ← Back to Home
+        <Link href="/" className="font-medium text-accent hover:text-accent-hover">
+          ← Back to home
         </Link>
       </p>
     </div>
+    </>
   );
 }
