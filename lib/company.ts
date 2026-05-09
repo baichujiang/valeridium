@@ -20,15 +20,16 @@ export const company = {
   representative: "Baichu Jiang, Management Board Member",
 } as const;
 
-export const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+/** Href paths without locale prefix — next-intl `Link` adds the active locale. */
+export const mainNav = [
+  { href: "/", labelKey: "home" },
+  { href: "/services", labelKey: "services" },
+  { href: "/about", labelKey: "about" },
+  { href: "/contact", labelKey: "contact" },
 ] as const;
 
-export const legalLinks = [
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-of-service", label: "Terms of Service" },
-  { href: "/refund-policy", label: "Refund Policy" },
+export const legalNav = [
+  { href: "/privacy-policy", labelKey: "privacyPolicy" },
+  { href: "/terms-of-service", labelKey: "termsOfService" },
+  { href: "/refund-policy", labelKey: "refundPolicy" },
 ] as const;

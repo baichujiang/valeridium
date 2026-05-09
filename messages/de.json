@@ -1,0 +1,111 @@
+{
+  "Nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "getInTouch": "Kontakt aufnehmen",
+    "privacyPolicy": "Datenschutz",
+    "termsOfService": "Nutzungsbedingungen",
+    "refundPolicy": "Rückerstattung"
+  },
+  "Brand": {
+    "tagline": "Software & digitale Dienstleistungen"
+  },
+  "Footer": {
+    "tagline": "Software- und Webentwicklung für Geschäftskunden.",
+    "pagesHeading": "Seiten",
+    "legalHeading": "Rechtliches",
+    "imprintLabel": "Impressum.",
+    "commercialRegister": "Handelsregister",
+    "registeredOffice": "Sitz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "Home": {
+    "heroTitle": "Digitale Dienstleistungen für moderne Online-Unternehmen",
+    "heroLead": "{companyName} bietet Softwareentwicklung, Webentwicklung und Unterstützung im E-Commerce-Betrieb für Geschäftskunden.",
+    "ctaServices": "Leistungen ansehen",
+    "ctaContact": "Kontakt",
+    "overviewEyebrow": "Überblick",
+    "overviewTitle": "Praktische digitale Lösungen für etablierte und wachsende Unternehmen",
+    "overviewBody": "{companyName} hilft Unternehmen, ihre Online-Präsenz mit zuverlässigen digitalen Lösungen aufzubauen, zu starten und zu steuern. Dazu zählen Website-Entwicklung, webbasierte Geschäftstools, E-Commerce-Setup, Online-Betriebsunterstützung und digitales Projektmanagement.",
+    "cardDeliveryTitle": "Projektbasierte Lieferung",
+    "cardDeliveryBody": "Klarer Umfang, vereinbarte Meilensteine und Online-Übergabe.",
+    "cardB2bTitle": "B2B-Fokus",
+    "cardB2bBody": "Wir arbeiten mit Geschäftskunden an Websites, Tools und Shop-Betrieb.",
+    "capabilitiesEyebrow": "Kompetenzen",
+    "capabilitiesTitle": "Wobei wir helfen",
+    "capabilitiesDesc": "Praktische digitale Services für Unternehmen mit Online-Geschäft — dokumentiert, planbar und auf Ihren Betrieb abgestimmt.",
+    "service1Title": "Software- & Webentwicklung",
+    "service1Text": "Wir entwickeln Unternehmenswebsites, Landingpages, Webanwendungen und Online-Tools nach Kundenbedarf.",
+    "service2Title": "E-Commerce-Setup",
+    "service2Text": "Wir unterstützen beim Online-Shop-Setup, Produktseiten, Zahlungsanbindung und grundlegenden E-Commerce-Abläufen.",
+    "service3Title": "Digitaler Betriebs-Support",
+    "service3Text": "Wir unterstützen bei digitalen Workflows, Content-Updates, Produktlistings und Online-Geschäftsführung.",
+    "serviceFootnote": "Geschäftskunden",
+    "servicesLink": "Alle Leistungen im Detail",
+    "processEyebrow": "Ablauf",
+    "processTitle": "So arbeiten wir",
+    "processDesc": "Ein klarer Ablauf vom ersten Gespräch bis zur Lieferung und Nachbetreuung.",
+    "step1Title": "Beratung",
+    "step1Text": "Wir klären Bedarf, Ziele und Projektumfang.",
+    "step2Title": "Planung",
+    "step2Text": "Wir definieren Anforderungen an Website, Software oder digitalen Betrieb.",
+    "step3Title": "Umsetzung",
+    "step3Text": "Wir erstellen, konfigurieren oder betreuen die digitale Lösung.",
+    "step4Title": "Lieferung & Support",
+    "step4Text": "Wir liefern die vereinbarte Leistung online und stehen bei Bedarf für Folgesupport bereit.",
+    "ctaBandEyebrow": "Geschäftsanfragen",
+    "ctaBandTitle": "Projekt besprechen oder Unternehmensangaben anfordern",
+    "ctaBandLead": "Wir beantworten relevante geschäftliche Nachrichten in der Reihenfolge des Eingangs.",
+    "ctaBandButton": "Zum Kontakt",
+    "heroChrome": "workspace.valeridium"
+  },
+  "ServicesPage": {
+    "title": "Unsere Leistungen",
+    "description": "Klar abgegrenzte Leistungsbereiche für Geschäftskunden. Vor Beginn der Arbeit wird der Umfang in der Regel schriftlich festgelegt.",
+    "item": {
+      "s1": {
+        "title": "Software- & Webentwicklung",
+        "body": "Website-Entwicklung, Landingpages, Webanwendungen und Online-Business-Tools für Unternehmen und digitale Projekte."
+      },
+      "s2": {
+        "title": "E-Commerce-Shop-Setup",
+        "body": "Wir helfen beim Aufbau von Online-Shops, Struktur der Produktseiten, grundlegenden Zahlungsabläufen und Vorbereitung der Vertriebskanäle."
+      },
+      "s3": {
+        "title": "Digitaler Betriebs-Support",
+        "body": "Website-Updates, Listing-Optimierung, Content-Management, digitale Workflows und allgemeine Online-Betriebsaufgaben."
+      },
+      "s4": {
+        "title": "Projektbasierte digitale Dienstleistungen",
+        "body": "Unsere Leistungen werden in der Regel projekt- oder honorarbasiert erbracht. Die Lieferung erfolgt online nach vereinbarter Leistung."
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "Über {companyName}",
+    "description": "Wer wir sind und was wir tun. Formelle Register- und Pflichtangaben finden Sie im folgenden Abschnitt — für Prüfungen und Verträge, nicht für die allgemeine Information.",
+    "p1": "{companyName} ist eine in Estland eingetragene Kapitalgesellschaft mit Fokus auf Softwareentwicklung, Webentwicklung und digitale Geschäftsdienstleistungen. Wir arbeiten mit Geschäftskunden, die praktische Online-Lösungen benötigen — Unternehmenswebsites, webbasierte Tools, E-Commerce-Setup und digitaler Betriebs-Support.",
+    "p2": "Unser Ziel ist es, Unternehmen dabei zu unterstützen, eine klare, zuverlässige und professionelle Online-Präsenz durch Software und digitale Services aufzubauen und zu steuern.",
+    "companyInfoHeading": "Unternehmensangaben",
+    "companyInfoHint": "Dies ist der vollständige öffentliche Unternehmensdatensatz für Verifizierung, Verträge und Plattform-Onboarding.",
+    "contactLine": "Für laufende Anfragen nutzen Sie bitte",
+    "contactLinkLabel": "Kontakt",
+    "rowCompanyName": "Firmenname",
+    "rowRegistryCode": "Registernummer",
+    "rowLegalForm": "Rechtsform",
+    "rowAddress": "Sitz / eingetragene Adresse",
+    "rowWebsite": "Website",
+    "rowActivity": "Haupttätigkeit",
+    "rowEmtak": "EMTAK-Code",
+    "rowNace": "NACE-Code",
+    "rowRepresentative": "Vertretungsberechtigte Person",
+    "rowEmail": "Kontakt-E-Mail"
+  },
+  "ContactPage": {
+    "title": "Kontakt",
+    "description": "Für geschäftliche Anfragen, Fragen zu Leistungen oder Support kontaktieren Sie uns bitte per E-Mail. Wir beantworten relevante geschäftliche Nachrichten in der Reihenfolge des Eingangs.",
+    "emailLabel": "E-Mail"
+  }
+}

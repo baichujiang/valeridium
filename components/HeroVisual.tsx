@@ -1,5 +1,9 @@
 /** Glass-style UI mock — dark, product-site aesthetic. */
-export function HeroVisual() {
+export function HeroVisual({
+  chromeLabel = "workspace.valeridium",
+}: {
+  chromeLabel?: string;
+}) {
   return (
     <div
       className="relative hidden lg:block lg:w-full lg:max-w-md xl:max-w-lg"
@@ -11,7 +15,7 @@ export function HeroVisual() {
           <span className="h-2.5 w-2.5 rounded-full bg-amber-400/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/60" />
           <span className="ml-2 flex-1 truncate rounded-md bg-white/[0.04] px-2 py-1 text-center text-[10px] text-muted">
-            workspace.valeridium
+            {chromeLabel}
           </span>
         </div>
         <div className="space-y-3 p-4">

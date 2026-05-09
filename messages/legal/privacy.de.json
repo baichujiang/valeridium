@@ -1,0 +1,117 @@
+{
+  "metaTitle": "Datenschutzerklärung",
+  "metaDescription": "Datenschutzerklärung der Valeridium OÜ für digitale Dienstleistungen.",
+  "title": "Datenschutzerklärung",
+  "description": "Stand: 9. Mai 2026. Verantwortliche Stelle: {companyName} ({registry}).",
+  "intro": "Diese Datenschutzerklärung beschreibt, wie {companyName} („wir“, „uns“ oder „unser“) personenbezogene Daten erhebt, verwendet, speichert und schützt, wenn Sie unsere Website unter {website} nutzen oder mit uns im Zusammenhang mit unseren digitalen Dienstleistungen kommunizieren.",
+  "backHome": "← Zur Startseite",
+  "sections": [
+    {
+      "title": "1. Welche Daten wir erheben",
+      "paragraphs": [
+        "Je nach Art der Kontaktaufnahme können folgende Kategorien von Informationen verarbeitet werden:"
+      ],
+      "listItems": [
+        {
+          "strong": "Identitäts- und Kontaktdaten:",
+          "text": "Name, E-Mail-Adresse, Firmenname und ähnliche Angaben, die Sie freiwillig mitteilen."
+        },
+        {
+          "strong": "Technische Daten:",
+          "text": "z. B. IP-Adresse, Browsertyp, Gerätetyp und allgemeine Nutzungsinformationen in Bezug auf unsere Website (ggf. über Cookies oder ähnliche Technologien)."
+        },
+        {
+          "strong": "Inhalte der Kommunikation:",
+          "text": "Nachrichten, die Sie uns per E-Mail oder über Formulare senden, einschließlich Anhänge, soweit dies für eine geschäftliche Anfrage relevant ist."
+        }
+      ]
+    },
+    {
+      "title": "2. Anfragen über die Website oder E-Mail",
+      "paragraphs": [
+        "Wenn Sie uns kontaktieren (z. B. per E-Mail oder über auf dieser Website veröffentlichte Kontaktdaten), verwenden wir die von Ihnen bereitgestellten Informationen, um Ihre Anfrage zu beantworten, zu prüfen, ob wir die gewünschten Leistungen erbringen können, und soweit angemessen eine geschäftliche Korrespondenz zu dokumentieren. Wir nutzen Anfragedaten nicht für unverwandtes Marketing, es sei denn, es liegt eine zulässige Rechtsgrundlage vor und ggf. Ihre Einwilligung."
+      ]
+    },
+    {
+      "title": "3. E-Mail-Kommunikation",
+      "paragraphs": [
+        "Wenn Sie uns unter {email} eine E-Mail senden, verarbeiten wir Absender- und Empfängeradressen, Inhalte sowie technische Metadaten, die für Zustellung und Archivierung geschäftsbezogener Nachrichten erforderlich sind. Wir nutzen diese Informationen zur Erbringung von Leistungen, zur Kundenbeziehung und zur Erfüllung gesetzlicher Pflichten (z. B. buchhalterische oder aufsichtsrechtliche Aufbewahrung, soweit anwendbar)."
+      ]
+    },
+    {
+      "title": "4. Zweck der Verarbeitung",
+      "paragraphs": [
+        "Wir verarbeiten personenbezogene Daten insbesondere zu folgenden Zwecken:"
+      ],
+      "listPlain": [
+        "Bereitstellung und Verwaltung unserer digitalen Dienstleistungen;",
+        "Kommunikation mit Kunden und Interessenten;",
+        "Betrieb, Sicherheit und Verbesserung unserer Website;",
+        "Einhaltung geltender Rechtsvorschriften und Beantwortung rechtmäßiger Anfragen;",
+        "Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen, soweit erforderlich."
+      ],
+      "paragraphsTail": [
+        "Die Verarbeitung erfolgt nur, wenn eine Rechtsgrundlage nach anwendbarem Datenschutzrecht besteht — z. B. Vertragserfüllung, berechtigte Interessen (sofern nicht durch Ihre Rechte überwogen), rechtliche Verpflichtung oder — soweit erforderlich — Einwilligung."
+      ]
+    },
+    {
+      "title": "5. Zahlungsabwicklung durch Drittanbieter",
+      "paragraphs": [
+        "Soweit Leistungen Zahlungen beinhalten, werden Zahlungsdaten in der Regel direkt von unabhängigen Zahlungsdienstleistern (z. B. Kartensysteme oder Zahlungsplattformen) erhoben und verarbeitet. Wir speichern keine vollständigen Kartennummern auf eigenen Systemen, wenn die Verarbeitung durch einen zertifizierten Dritten erfolgt. Für die dort verarbeiteten Daten gelten die Datenschutz- und Nutzungsbedingungen des jeweiligen Anbieters."
+      ]
+    },
+    {
+      "title": "6. Speicherdauer",
+      "paragraphs": [
+        "Wir bewahren personenbezogene Daten nur so lange auf, wie es für die in dieser Erklärung genannten Zwecke erforderlich ist — einschließlich Projektabwicklung, steuerlicher und buchhalterischer Pflichten sowie Streitbeilegung. Die Dauer kann je nach Datenart und gesetzlichen Vorgaben variieren. Sind Daten nicht mehr erforderlich, löschen oder anonymisieren wir sie, soweit möglich."
+      ]
+    },
+    {
+      "title": "7. Ihre Rechte",
+      "paragraphs": [
+        "Je nach Ihrem Wohnsitz und geltendem Recht (einschließlich der Datenschutz-Grundverordnung, soweit anwendbar) können Ihnen insbesondere folgende Rechte zustehen:"
+      ],
+      "listPlain": [
+        "Auskunft über Ihre personenbezogenen Daten;",
+        "Berichtigung unrichtiger Daten;",
+        "Löschung unter bestimmten Voraussetzungen;",
+        "Widerspruch oder Einschränkung bestimmter Verarbeitungen;",
+        "Datenübertragbarkeit, soweit anwendbar;",
+        "Widerruf einer Einwilligung, sofern die Verarbeitung darauf beruht."
+      ],
+      "paragraphsTail": [
+        "Zur Ausübung dieser Rechte kontaktieren Sie uns unter {email}. Sie können ferner Beschwerde bei einer Aufsichtsbehörde in Ihrem Land oder Ihrer Region einreichen."
+      ]
+    },
+    {
+      "title": "8. Cookies",
+      "paragraphs": [
+        "Unsere Website kann Cookies oder ähnliche Technologien verwenden, die für den Betrieb der Seite erforderlich sind (z. B. Sicherheit oder Lastverteilung), sowie — sofern eingesetzt — Analyse- oder Präferenz-Cookies. Sie können Cookies in Ihren Browsereinstellungen steuern. Das Blockieren bestimmter Cookies kann die Funktionsweise einzelner Bereiche der Website beeinträchtigen."
+      ]
+    },
+    {
+      "title": "9. Internationale Übermittlungen",
+      "paragraphs": [
+        "Übermitteln wir personenbezogene Daten außerhalb des Europäischen Wirtschaftsraums, erfolgt dies im Einklang mit geltendem Recht und unter geeigneten Garantien (z. B. Standardvertragsklauseln), soweit erforderlich."
+      ]
+    },
+    {
+      "title": "10. Sicherheit",
+      "paragraphs": [
+        "Wir treffen angemessene technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten vor unbefugtem Zugriff, Verlust oder Missbrauch. Die Übertragung über das Internet ist nicht vollständig risikofrei; wir empfehlen, sensible Informationen über sichere Kanäle zu senden."
+      ]
+    },
+    {
+      "title": "11. Änderungen dieser Erklärung",
+      "paragraphs": [
+        "Wir können diese Datenschutzerklärung anpassen. Die jeweils aktuelle Fassung wird auf dieser Seite veröffentlicht; soweit möglich mit aktualisiertem Standdatum."
+      ]
+    },
+    {
+      "title": "12. Kontakt",
+      "paragraphs": [
+        "Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken richten Sie bitte an {email}."
+      ]
+    }
+  ]
+}

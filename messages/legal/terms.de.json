@@ -1,0 +1,72 @@
+{
+  "metaTitle": "Nutzungsbedingungen",
+  "metaDescription": "Nutzungsbedingungen der Valeridium OÜ für digitale Dienstleistungen.",
+  "title": "Nutzungsbedingungen",
+  "description": "Stand: 9. Mai 2026 · {companyName} · Register {registry}",
+  "intro": "Diese Nutzungsbedingungen („Bedingungen“) regeln die Nutzung der Website unter {website} sowie die Inanspruchnahme digitaler Dienstleistungen von {companyName} („Valeridium“, „wir“, „uns“ oder „unser“). Mit dem Zugriff auf die Website oder der Beauftragung unserer Leistungen erklären Sie sich mit diesen Bedingungen einverstanden.",
+  "backHome": "← Zur Startseite",
+  "sections": [
+    {
+      "title": "1. Leistungsumfang",
+      "paragraphs": [
+        "Valeridium erbringt Softwareentwicklung, Webentwicklung, E-Commerce-Setup-Support, digitalen Betriebs-Support und verwandte digitale Dienstleistungen für Geschäftskunden, wie in Angeboten, Leistungsbeschreibungen, Auftragsbestätigungen oder sonstigen schriftlichen Vereinbarungen beschrieben. Website-Inhalte dienen der allgemeinen Information; verbindliche Pflichten ergeben sich nur aus einer gesonderten Vereinbarung zwischen Ihnen und Valeridium."
+      ]
+    },
+    {
+      "title": "2. Pflichten des Kunden",
+      "paragraphs": [
+        "Sie verpflichten sich insbesondere:"
+      ],
+      "listPlain": [
+        "wahrheitsgemäße Angaben sowie rechtzeitige Zugänge, Materialien und Freigaben bereitzustellen, die für die Erbringung der Leistung erforderlich sind;",
+        "sicherzustellen, dass Sie über Rechte an Inhalten, Marken oder Drittmaterialien verfügen, die Sie einreichen;",
+        "geltende Gesetze und Plattformregeln für Ihr Geschäft und Ihre Online-Präsenz einzuhalten;",
+        "Zugangsdaten vertraulich zu behandeln und uns bei Verdacht auf unbefugten Zugriff zu informieren."
+      ]
+    },
+    {
+      "title": "3. Zahlungen und Rechnungen",
+      "paragraphs": [
+        "Honorare, Rechnungsstellung, Steuern und Zahlungsmodalitäten ergeben sich aus der jeweiligen Vereinbarung oder Rechnung. Sofern nicht anders vereinbart, sind Beträge in der auf der Rechnung genannten Währung und Frist fällig. Bei Zahlungsverzug können Arbeiten oder Leistungen bis zum Zahlungseingang ausgesetzt werden. Bank- oder Zahlungsgebühren Ihres Instituts tragen Sie, sofern nicht schriftlich anders vereinbart."
+      ]
+    },
+    {
+      "title": "4. Leistungserbringung",
+      "paragraphs": [
+        "Liefertermine sind Schätzungen, sofern nicht ausdrücklich schriftlich garantiert. Digitale Ergebnisse werden in der Regel online bereitgestellt (z. B. Repository-Zugang, Dateitransfer oder Deployment in vereinbarte Umgebungen). Abnahmekriterien, Korrekturrunden und Supportfristen ergeben sich — soweit vorhanden — aus der jeweiligen Projektvereinbarung."
+      ]
+    },
+    {
+      "title": "5. Geistiges Eigentum",
+      "paragraphs": [
+        "Sofern nicht schriftlich anders vereinbart, ergeben sich Eigentum an Ergebnisleistungen und Lizenzumfänge aus der Projektvereinbarung. Bereits bestehende Materialien, Tools, Bibliotheken und Know-how, die für mehrere Kunden genutzt werden, verbleiben im Eigentum von Valeridium oder deren Lizenzgebern; Sie erhalten den vereinbarten Lizenzumfang für Ihr Projekt."
+      ]
+    },
+    {
+      "title": "6. Haftungsbeschränkung",
+      "paragraphs": [
+        "Soweit gesetzlich zulässig, haftet Valeridium nicht für mittelbare, beiläufige, Folge-, besondere oder Strafschäden sowie entgangenen Gewinn, Umsatz, Daten oder Goodwill aus oder im Zusammenhang mit diesen Bedingungen oder unseren Leistungen. Die Gesamthaftung aus oder im Zusammenhang mit einem bestimmten Auftrag ist — soweit gesetzlich zulässig — auf die in den sechs (6) Monaten vor dem auslösenden Ereignis an Valeridium gezahlten Honorare begrenzt, sofern zwingendes Recht nichts anderes vorsieht.",
+        "Nichts in diesen Bedingungen schließt oder beschränkt eine Haftung aus, die nach geltendem Recht nicht ausgeschlossen oder beschränkt werden darf."
+      ]
+    },
+    {
+      "title": "7. Änderungen der Bedingungen",
+      "paragraphs": [
+        "Wir können diese Bedingungen anpassen. Die jeweils gültige Fassung wird auf dieser Seite mit aktualisiertem Datum veröffentlicht. Wesentliche Änderungen können — soweit gesetzlich erforderlich — zusätzliche Hinweise erfordern. Die weitere Nutzung der Website nach Inkrafttreten von Änderungen gilt als Zustimmung, sofern nicht laufende Leistungen durch eine gesonderte schriftliche Vereinbarung Vorrang haben."
+      ]
+    },
+    {
+      "title": "8. Vertragspartner und Streitigkeiten",
+      "paragraphs": [
+        "Vertragspartner ist {companyName}, Registernummer {registry}, eingetragen in Estland unter der Adresse {address}.",
+        "Es gilt estnisches Recht für {companyName}, unter Ausschluss von Kollisionsnormen, die auf ein anderes Recht verweisen würden. Für Streitigkeiten aus oder im Zusammenhang mit diesen Bedingungen sind die Gerichte in Estland zuständig, vorbehaltlich zwingender Verbraucherschutzvorschriften, soweit anwendbar."
+      ]
+    },
+    {
+      "title": "9. Kontakt",
+      "paragraphs": [
+        "Fragen zu diesen Bedingungen richten Sie bitte an {email}."
+      ]
+    }
+  ]
+}

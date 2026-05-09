@@ -1,0 +1,40 @@
+{
+  "metaTitle": "Rückerstattungsrichtlinie",
+  "metaDescription": "Rückerstattungsrichtlinie der Valeridium OÜ für projektbasierte digitale Dienstleistungen.",
+  "title": "Rückerstattungsrichtlinie",
+  "description": "Stand: 9. Mai 2026 · {companyName}",
+  "intro": "Diese Rückerstattungsrichtlinie gilt für projektbasierte Software- und digitale Dienstleistungen von {companyName}. Einzelaufträge können durch schriftliche Vereinbarungen ergänzt werden.",
+  "backHome": "← Zur Startseite",
+  "sections": [
+    {
+      "title": "1. Einzelfallprüfung",
+      "paragraphs": [
+        "Rückerstattungsanträge werden im Einzelfall geprüft. Wir bewerten den Bearbeitungsstand, gezahlte Beträge, bereits angefallene Kosten und die Bedingungen der jeweiligen Vereinbarung, bevor wir entscheiden."
+      ]
+    },
+    {
+      "title": "2. Arbeit noch nicht begonnen",
+      "paragraphs": [
+        "Wenn Sie Honorare für vereinbarte Leistungen gezahlt haben und die Arbeit noch nicht begonnen wurde, kann unter Abzug nicht erstattungsfähiger Drittkosten oder vorab mitgeteilter Verwaltungsgebühren — soweit anwendbar — eine Rückerstattung möglich sein."
+      ]
+    },
+    {
+      "title": "3. Laufende oder erbrachte Arbeit",
+      "paragraphs": [
+        "Wenn die Arbeit begonnen oder bereits erbracht wurde, können Gebühren teilweise oder vollständig nicht erstattungsfähig sein — abhängig von erreichten Meilensteinen, eingesetzter Zeit, in Ihrem Auftrag beschafften Lizenzen oder Abonnements und den Vertragsbedingungen. Erbrachte Ergebnisse unterliegen in der Regel den vereinbarten Regeln zu geistigem Eigentum und Lizenzen."
+      ]
+    },
+    {
+      "title": "4. Abonnements und wiederkehrende Leistungen",
+      "paragraphs": [
+        "Bei Abonnements oder wiederkehrender Abrechnung gelten Kündigung und Erstattungsansprüche nach den schriftlich vereinbarten Abrechnungsbedingungen (z. B. Kündigungsfristen, Verlängerung, Mindestlaufzeit). Sofern nicht anders geregelt, können laufende Gebühren bis zu einer wirksamen Kündigung nach diesen Bedingungen weiterhin anfallen."
+      ]
+    },
+    {
+      "title": "5. Rückerstattung beantragen",
+      "paragraphs": [
+        "Senden Sie Rückerstattungsanträge an {email} von der mit Ihrem Konto oder Vertrag verknüpften E-Mail-Adresse und nennen Sie Firmenname, Rechnungs- oder Vertragsreferenz sowie eine kurze Begründung. Wir bemühen uns um Antwort in angemessener geschäftlicher Frist."
+      ]
+    }
+  ]
+}

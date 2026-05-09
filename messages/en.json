@@ -1,0 +1,111 @@
+{
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "getInTouch": "Get in touch",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "refundPolicy": "Refund Policy"
+  },
+  "Brand": {
+    "tagline": "Software & digital services"
+  },
+  "Footer": {
+    "tagline": "Software and web development for business clients.",
+    "pagesHeading": "Pages",
+    "legalHeading": "Legal",
+    "imprintLabel": "Legal imprint.",
+    "commercialRegister": "Commercial register",
+    "registeredOffice": "Registered office",
+    "rights": "All rights reserved."
+  },
+  "Home": {
+    "heroTitle": "Digital services for modern online businesses",
+    "heroLead": "{companyName} provides software, web development, and e-commerce operation support for business clients.",
+    "ctaServices": "View services",
+    "ctaContact": "Contact us",
+    "overviewEyebrow": "Overview",
+    "overviewTitle": "Practical digital solutions for established and growing companies",
+    "overviewBody": "{companyName} helps businesses build, launch, and manage their online presence through practical and reliable digital solutions. Our services include website development, web-based business tools, e-commerce store setup, online operation support, and digital project management.",
+    "cardDeliveryTitle": "Project-based delivery",
+    "cardDeliveryBody": "Clear scope, agreed milestones, and online handover.",
+    "cardB2bTitle": "B2B focus",
+    "cardB2bBody": "We work with business clients on websites, tools, and store operations.",
+    "capabilitiesEyebrow": "Capabilities",
+    "capabilitiesTitle": "What we help you with",
+    "capabilitiesDesc": "Practical digital services for companies that operate online — documented, predictable, and aligned to your operations.",
+    "service1Title": "Software & Web Development",
+    "service1Text": "We develop business websites, landing pages, web applications, and online tools tailored to client needs.",
+    "service2Title": "E-commerce Setup",
+    "service2Text": "We support businesses with online store setup, product page structure, payment integration, and basic e-commerce operations.",
+    "service3Title": "Digital Operation Support",
+    "service3Text": "We assist clients with digital workflows, content updates, product listing optimization, and online business management.",
+    "serviceFootnote": "Business clients",
+    "servicesLink": "Full service descriptions",
+    "processEyebrow": "Process",
+    "processTitle": "How we work",
+    "processDesc": "A straightforward engagement model from first conversation to delivery and follow-up.",
+    "step1Title": "Consultation",
+    "step1Text": "We discuss the client’s needs, goals, and project scope.",
+    "step2Title": "Planning",
+    "step2Text": "We define the website, software, or digital operation requirements.",
+    "step3Title": "Implementation",
+    "step3Text": "We build, configure, or support the digital solution.",
+    "step4Title": "Delivery & Support",
+    "step4Text": "We deliver the agreed service online and provide follow-up support when needed.",
+    "ctaBandEyebrow": "Business inquiries",
+    "ctaBandTitle": "Discuss a project or request company details",
+    "ctaBandLead": "We respond to relevant business messages in order of receipt.",
+    "ctaBandButton": "Go to contact",
+    "heroChrome": "workspace.valeridium"
+  },
+  "ServicesPage": {
+    "title": "Our services",
+    "description": "Clear, documented service areas for business clients. Engagements are typically scoped in writing before work begins.",
+    "item": {
+      "s1": {
+        "title": "Software & Web Development",
+        "body": "We provide website development, landing page creation, web application development, and online business tools for companies and digital projects."
+      },
+      "s2": {
+        "title": "E-commerce Store Setup",
+        "body": "We help clients set up online stores, structure product pages, configure basic payment flows, and prepare their online sales channels."
+      },
+      "s3": {
+        "title": "Digital Operation Support",
+        "body": "We support clients with website updates, product listing optimization, content management, digital workflows, and general online operation tasks."
+      },
+      "s4": {
+        "title": "Project-Based Digital Services",
+        "body": "Our services are usually provided on a project or service-fee basis. Clients pay for agreed digital services, and delivery is completed online."
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "About {companyName}",
+    "description": "Who we are and what we do. Formal registry and statutory details are in the section below — intended for verification and contracts, not general browsing.",
+    "p1": "{companyName} is an Estonia-registered private limited company focused on software development, web development, and digital business services. We work with business clients that need practical online solutions, including company websites, web-based tools, e-commerce setup, and digital operation support.",
+    "p2": "Our goal is to help businesses establish and manage a clear, reliable, and professional online presence through software and digital services.",
+    "companyInfoHeading": "Company information",
+    "companyInfoHint": "This is the complete public company record for business verification, contracts, and platform onboarding.",
+    "contactLine": "For day-to-day inquiries, use",
+    "contactLinkLabel": "Contact",
+    "rowCompanyName": "Company name",
+    "rowRegistryCode": "Registry code",
+    "rowLegalForm": "Legal form",
+    "rowAddress": "Registered address",
+    "rowWebsite": "Main website",
+    "rowActivity": "Main business activity",
+    "rowEmtak": "EMTAK code",
+    "rowNace": "NACE code",
+    "rowRepresentative": "Representative",
+    "rowEmail": "Contact email"
+  },
+  "ContactPage": {
+    "title": "Contact us",
+    "description": "For business inquiries, service questions, or support requests, please contact us by email. We aim to respond to relevant business messages in order of receipt.",
+    "emailLabel": "Email"
+  }
+}

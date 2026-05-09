@@ -1,8 +1,12 @@
-import Link from "next/link";
-import { company, legalLinks, navLinks } from "@/lib/company";
+import { getTranslations } from "next-intl/server";
+import { company, legalNav, mainNav } from "@/lib/company";
 import { LogoMark } from "@/components/LogoMark";
+import { Link } from "@/i18n/navigation";
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const t = await getTranslations("Footer");
+  const tNav = await getTranslations("Nav");
+
   return (
     <footer className="relative border-t border-white/[0.06] bg-navy">
       <div
@@ -18,7 +22,7 @@ export function SiteFooter() {
                 {company.legalName}
               </p>
               <p className="mt-2 text-sm leading-relaxed text-navy-muted">
-                Software and web development for business clients.
+                {t("tagline")}
               </p>
               <p className="mt-4">
                 <a
@@ -33,16 +37,16 @@ export function SiteFooter() {
           <div className="flex flex-wrap gap-10 sm:gap-16 lg:gap-20">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                Pages
+                {t("pagesHeading")}
               </p>
               <ul className="mt-4 flex flex-col gap-2.5">
-                {navLinks.map(({ href, label }) => (
+                {mainNav.map(({ href, labelKey }) => (
                   <li key={href}>
                     <Link
                       href={href}
                       className="text-sm text-white/80 transition-colors hover:text-white"
                     >
-                      {label}
+                      {tNav(labelKey)}
                     </Link>
                   </li>
                 ))}
@@ -50,16 +54,16 @@ export function SiteFooter() {
             </div>
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
-                Legal
+                {t("legalHeading")}
               </p>
               <ul className="mt-4 flex flex-col gap-2.5">
-                {legalLinks.map(({ href, label }) => (
+                {legalNav.map(({ href, labelKey }) => (
                   <li key={href}>
                     <Link
                       href={href}
                       className="text-sm text-white/80 transition-colors hover:text-white"
                     >
-                      {label}
+                      {tNav(labelKey)}
                     </Link>
                   </li>
                 ))}
@@ -70,10 +74,10 @@ export function SiteFooter() {
 
         <div className="mt-12 space-y-4 border-t border-white/[0.06] pt-8">
           <p className="text-[11px] leading-relaxed text-navy-muted">
-            <span className="text-white/50">Legal imprint.</span>{" "}
-            {company.legalName}. Commercial register:{" "}
+            <span className="text-white/50">{t("imprintLabel")}</span>{" "}
+            {company.legalName}. {t("commercialRegister")}:{" "}
             <span className="font-mono text-white/45">{company.registryCode}</span>
-            . {company.country}. Registered office: {company.address} ·{" "}
+            . {company.country}. {t("registeredOffice")}: {company.address} ·{" "}
             <a
               href={`mailto:${company.email}`}
               className="text-sky-500/80 hover:text-sky-400"
@@ -89,7 +93,7 @@ export function SiteFooter() {
             </a>
           </p>
           <p className="text-xs text-navy-muted">
-            © 2026 {company.legalName}. All rights reserved.
+            © 2026 {company.legalName}. {t("rights")}
           </p>
         </div>
       </div>
