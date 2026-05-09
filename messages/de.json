@@ -7,7 +7,8 @@
     "getInTouch": "Kontakt aufnehmen",
     "privacyPolicy": "Datenschutz",
     "termsOfService": "Nutzungsbedingungen",
-    "refundPolicy": "Rückerstattung"
+    "refundPolicy": "Rückerstattung",
+    "impressum": "Impressum"
   },
   "Brand": {
     "tagline": "Software & digitale Dienstleistungen"
@@ -16,9 +17,6 @@
     "tagline": "Software- und Webentwicklung für Geschäftskunden.",
     "pagesHeading": "Seiten",
     "legalHeading": "Rechtliches",
-    "imprintLabel": "Impressum.",
-    "commercialRegister": "Handelsregister",
-    "registeredOffice": "Sitz",
     "rights": "Alle Rechte vorbehalten."
   },
   "Home": {
@@ -107,5 +105,10 @@
     "title": "Kontakt",
     "description": "Für geschäftliche Anfragen, Fragen zu Leistungen oder Support kontaktieren Sie uns bitte per E-Mail. Wir beantworten relevante geschäftliche Nachrichten in der Reihenfolge des Eingangs.",
     "emailLabel": "E-Mail"
+  },
+  "ImpressumPage": {
+    "title": "Impressum",
+    "description": "Gesetzliche Anbieterkennzeichnung und Pflichtangaben.",
+    "intro": "Die folgenden Angaben dienen der Erfüllung gesetzlicher Informationspflichten. Für Informationen über unsere Arbeit siehe Über uns; für laufende Anfragen nutzen Sie bitte Kontakt."
   }
 }

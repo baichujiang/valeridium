@@ -7,7 +7,8 @@
     "getInTouch": "Get in touch",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "refundPolicy": "Refund Policy"
+    "refundPolicy": "Refund Policy",
+    "impressum": "Impressum"
   },
   "Brand": {
     "tagline": "Software & digital services"
@@ -16,9 +17,6 @@
     "tagline": "Software and web development for business clients.",
     "pagesHeading": "Pages",
     "legalHeading": "Legal",
-    "imprintLabel": "Legal imprint.",
-    "commercialRegister": "Commercial register",
-    "registeredOffice": "Registered office",
     "rights": "All rights reserved."
   },
   "Home": {
@@ -107,5 +105,10 @@
     "title": "Contact us",
     "description": "For business inquiries, service questions, or support requests, please contact us by email. We aim to respond to relevant business messages in order of receipt.",
     "emailLabel": "Email"
+  },
+  "ImpressumPage": {
+    "title": "Impressum",
+    "description": "Operator identification and statutory company details for this website.",
+    "intro": "The information below is provided as required for transparency and provider identification. For how we work, see About; for inquiries, use Contact."
   }
 }

@@ -36,7 +36,7 @@ export function SiteHeader() {
               {company.legalName}
             </span>
             <span className="text-[11px] font-medium text-muted">
-              {tBrand("tagline")} · {company.country}
+              {tBrand("tagline")}
             </span>
           </span>
           <span className="max-w-[10rem] truncate text-sm font-semibold tracking-tight text-foreground sm:hidden">

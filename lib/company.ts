@@ -3,7 +3,8 @@
  * - Home: services narrative only; no registry block in the hero.
  * - Contact: email only; point to footer + About for statutory detail.
  * - About: full structured company record (secondary page).
- * - Footer: compact imprint in small type at the very bottom; link to About for NACE/EMTAK/representative.
+ * - Footer: Legal column lists Impressum + policies; copyright line only (no registry strip).
+ * - Impressum: /impressum — statutory operator details (not in header nav).
  */
 export const company = {
   legalName: "Valeridium OÜ",
@@ -29,6 +30,7 @@ export const mainNav = [
 ] as const;
 
 export const legalNav = [
+  { href: "/impressum", labelKey: "impressum" },
   { href: "/privacy-policy", labelKey: "privacyPolicy" },
   { href: "/terms-of-service", labelKey: "termsOfService" },
   { href: "/refund-policy", labelKey: "refundPolicy" },

@@ -72,26 +72,7 @@ export async function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 space-y-4 border-t border-white/[0.06] pt-8">
-          <p className="text-[11px] leading-relaxed text-navy-muted">
-            <span className="text-white/50">{t("imprintLabel")}</span>{" "}
-            {company.legalName}. {t("commercialRegister")}:{" "}
-            <span className="font-mono text-white/45">{company.registryCode}</span>
-            . {company.country}. {t("registeredOffice")}: {company.address} ·{" "}
-            <a
-              href={`mailto:${company.email}`}
-              className="text-sky-500/80 hover:text-sky-400"
-            >
-              {company.email}
-            </a>{" "}
-            ·{" "}
-            <a
-              href={company.website}
-              className="text-sky-500/80 hover:text-sky-400"
-            >
-              {company.website.replace(/^https?:\/\//, "")}
-            </a>
-          </p>
+        <div className="mt-12 border-t border-white/[0.06] pt-8">
           <p className="text-xs text-navy-muted">
             © 2026 {company.legalName}. {t("rights")}
           </p>
