@@ -15,7 +15,7 @@ export default function ContactPage() {
         description="For business inquiries, service questions, or support requests, please contact us by email. We aim to respond to relevant business messages in order of receipt."
       />
       <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-border bg-surface p-6 shadow-[var(--card-shadow)] sm:p-10">
+        <div className="rounded-2xl border border-white/[0.08] bg-surface p-6 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-10">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
             Contact information
           </h2>
@@ -26,12 +26,12 @@ export default function ContactPage() {
               </span>
               <a
                 href={`mailto:${company.email}`}
-                className="mt-2 inline-block text-lg font-semibold text-accent hover:text-accent-hover"
+                className="mt-2 inline-block text-lg font-semibold text-sky-400 transition-colors hover:text-sky-300"
               >
                 {company.email}
               </a>
             </li>
-            <li className="grid gap-6 border-t border-border pt-6 sm:grid-cols-2">
+            <li className="grid gap-6 border-t border-white/[0.06] pt-6 sm:grid-cols-2">
               <div>
                 <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
                   Company
@@ -44,12 +44,12 @@ export default function ContactPage() {
                 <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
                   Registry code
                 </span>
-                <span className="mt-2 block text-sm font-medium text-foreground">
+                <span className="mt-2 block font-mono text-sm font-medium text-foreground">
                   {company.registryCode}
                 </span>
               </div>
             </li>
-            <li className="border-t border-border pt-6">
+            <li className="border-t border-white/[0.06] pt-6">
               <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
                 Registered address
               </span>
@@ -57,13 +57,13 @@ export default function ContactPage() {
                 {company.address}
               </span>
             </li>
-            <li className="border-t border-border pt-6">
+            <li className="border-t border-white/[0.06] pt-6">
               <span className="block text-xs font-semibold uppercase tracking-wider text-muted-light">
                 Website
               </span>
               <a
                 href={company.website}
-                className="mt-2 inline-block text-sm font-medium text-accent hover:text-accent-hover"
+                className="mt-2 inline-block text-sm font-medium text-sky-400 transition-colors hover:text-sky-300"
               >
                 {company.website}
               </a>

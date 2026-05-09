@@ -4,8 +4,12 @@ import { LogoMark } from "@/components/LogoMark";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-navy bg-navy text-navy-muted">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+    <footer className="relative border-t border-white/[0.06] bg-navy">
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-500/40 to-transparent"
+        aria-hidden
+      />
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
             <div className="flex items-start gap-3">
@@ -25,7 +29,9 @@ export function SiteFooter() {
                 <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
                   Registry
                 </dt>
-                <dd className="text-white/90">{company.registryCode}</dd>
+                <dd className="font-mono text-sm text-white/90">
+                  {company.registryCode}
+                </dd>
               </div>
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
@@ -34,7 +40,7 @@ export function SiteFooter() {
                 <dd>
                   <a
                     href={`mailto:${company.email}`}
-                    className="text-white hover:underline"
+                    className="text-sky-300 transition-colors hover:text-sky-200"
                   >
                     {company.email}
                   </a>
@@ -52,7 +58,7 @@ export function SiteFooter() {
                   <li key={href}>
                     <Link
                       href={href}
-                      className="text-sm text-white/85 transition-colors hover:text-white"
+                      className="text-sm text-white/80 transition-colors hover:text-white"
                     >
                       {label}
                     </Link>
@@ -69,7 +75,7 @@ export function SiteFooter() {
                   <li key={href}>
                     <Link
                       href={href}
-                      className="text-sm text-white/85 transition-colors hover:text-white"
+                      className="text-sm text-white/80 transition-colors hover:text-white"
                     >
                       {label}
                     </Link>
@@ -81,13 +87,13 @@ export function SiteFooter() {
               <p className="text-[11px] font-semibold uppercase tracking-wider text-navy-muted">
                 Registered office
               </p>
-              <p className="mt-4 text-sm leading-relaxed text-white/80">
+              <p className="mt-4 text-sm leading-relaxed text-white/75">
                 {company.address}
               </p>
               <p className="mt-3 text-sm">
                 <a
                   href={company.website}
-                  className="text-sky-300 underline-offset-2 hover:text-sky-200 hover:underline"
+                  className="text-sky-400 underline-offset-2 hover:text-sky-300 hover:underline"
                 >
                   {company.website}
                 </a>
@@ -95,7 +101,7 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-center sm:flex-row sm:text-left">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 text-center sm:flex-row sm:text-left">
           <p className="text-xs text-navy-muted">
             © 2026 {company.legalName}. All rights reserved.
           </p>

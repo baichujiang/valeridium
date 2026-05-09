@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(company.website),
+  other: { "color-scheme": "dark" },
   title: {
     default: `${company.legalName} — Digital services`,
     template: `%s | ${company.legalName}`,
@@ -44,9 +45,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
+      className={`${plusJakarta.variable} ${geistMono.variable} h-full scroll-smooth antialiased dark`}
     >
-      <body className="flex min-h-full flex-col font-sans">
+      <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

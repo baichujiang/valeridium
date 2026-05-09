@@ -51,19 +51,19 @@ const trustItems = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-surface">
+      <section className="relative overflow-hidden border-b border-white/[0.06] bg-surface">
         <HeroPattern />
-        <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+        <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
           <div>
             <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-muted">
+              <span className="inline-flex items-center rounded-full border border-white/[0.1] bg-white/[0.04] px-3 py-1 text-xs font-medium text-muted backdrop-blur-sm">
                 {company.legalName}
               </span>
               <span className="text-xs font-medium text-muted-light">
                 {company.country}
               </span>
             </div>
-            <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl sm:leading-[1.1]">
+            <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl sm:leading-[1.08]">
               Digital services for modern online businesses
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
@@ -73,13 +73,13 @@ export default function HomePage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md shadow-accent/20 transition-colors hover:bg-accent-hover"
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition-opacity hover:opacity-95"
               >
                 View services
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent/30 hover:bg-accent-subtle/60"
+                className="inline-flex items-center justify-center rounded-xl border border-white/[0.12] bg-white/[0.04] px-6 py-3 text-sm font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-sky-500/30 hover:bg-white/[0.07]"
               >
                 Contact us
               </Link>
@@ -88,10 +88,10 @@ export default function HomePage() {
               {trustItems.map(({ label, detail }) => (
                 <li
                   key={label}
-                  className="flex items-baseline gap-2 rounded-xl border border-border bg-background/80 px-4 py-2.5 text-sm backdrop-blur-sm"
+                  className="flex items-baseline gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-2.5 text-sm backdrop-blur-sm"
                 >
                   <span className="font-semibold text-foreground">{label}</span>
-                  <span className="text-muted">{detail}</span>
+                  <span className="font-mono text-xs text-muted">{detail}</span>
                 </li>
               ))}
             </ul>
@@ -117,7 +117,7 @@ export default function HomePage() {
               project management.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-xl border border-border bg-surface p-5 shadow-[var(--card-shadow)]">
+              <div className="rounded-xl border border-white/[0.08] bg-surface p-5 shadow-[var(--card-shadow)]">
                 <p className="text-sm font-semibold text-foreground">
                   Project-based delivery
                 </p>
@@ -125,7 +125,7 @@ export default function HomePage() {
                   Clear scope, agreed milestones, and online handover.
                 </p>
               </div>
-              <div className="rounded-xl border border-border bg-surface p-5 shadow-[var(--card-shadow)]">
+              <div className="rounded-xl border border-white/[0.08] bg-surface p-5 shadow-[var(--card-shadow)]">
                 <p className="text-sm font-semibold text-foreground">
                   B2B focus
                 </p>
@@ -139,7 +139,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-surface py-20">
+      <section className="border-y border-white/[0.06] bg-surface-highlight py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Capabilities"
@@ -150,9 +150,9 @@ export default function HomePage() {
             {services.map(({ title, text, icon: Icon }) => (
               <li
                 key={title}
-                className="group flex flex-col rounded-2xl border border-border bg-background p-6 shadow-[var(--card-shadow)] transition-shadow duration-300 hover:shadow-[var(--card-shadow-hover)]"
+                className="group flex flex-col rounded-2xl border border-white/[0.08] bg-surface/90 p-6 shadow-[var(--card-shadow)] backdrop-blur-sm transition-all duration-300 hover:border-sky-500/25 hover:shadow-[var(--card-shadow-hover)]"
               >
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-accent-subtle ring-1 ring-accent/10 transition-colors group-hover:bg-accent/10">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/10 ring-1 ring-sky-400/20 transition-colors group-hover:bg-sky-500/15">
                   <Icon />
                 </span>
                 <h3 className="mt-5 text-lg font-semibold text-foreground">
@@ -170,7 +170,7 @@ export default function HomePage() {
           <p className="mt-10 text-center">
             <Link
               href="/services"
-              className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent-hover"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-sky-400 transition-colors hover:text-sky-300"
             >
               Full service descriptions
               <span aria-hidden>→</span>
@@ -187,34 +187,38 @@ export default function HomePage() {
         />
         <div className="relative mt-14">
           <div
-            className="pointer-events-none absolute left-0 right-0 top-[1.125rem] hidden h-px bg-gradient-to-r from-transparent via-border to-transparent lg:block"
+            className="pointer-events-none absolute left-0 right-0 top-[1.125rem] hidden h-px bg-gradient-to-r from-transparent via-white/15 to-transparent lg:block"
             aria-hidden
           />
           <ol className="relative grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-          {steps.map(({ title, text }, i) => (
-            <li key={title} className="relative">
-              <div className="flex items-start gap-4 lg:flex-col lg:gap-0">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white shadow-md shadow-accent/25 ring-4 ring-background">
-                  {i + 1}
-                </span>
-                <div className="lg:mt-5">
-                  <h3 className="text-base font-semibold text-foreground">
-                    {title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
-                    {text}
-                  </p>
+            {steps.map(({ title, text }, i) => (
+              <li key={title} className="relative">
+                <div className="flex items-start gap-4 lg:flex-col lg:gap-0">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-sm font-bold text-white shadow-lg shadow-sky-500/30 ring-4 ring-background">
+                    {i + 1}
+                  </span>
+                  <div className="lg:mt-5">
+                    <h3 className="text-base font-semibold text-foreground">
+                      {title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted">
+                      {text}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          ))}
+              </li>
+            ))}
           </ol>
         </div>
       </section>
 
-      <section className="border-t border-border bg-gradient-to-b from-accent-subtle/40 to-background py-16">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent">
+      <section className="relative border-t border-white/[0.06] py-20">
+        <div
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(56,189,248,0.08),transparent_55%)]"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-sky-400/90">
             Business inquiries
           </p>
           <h2 className="mx-auto mt-3 max-w-xl text-2xl font-semibold tracking-tight text-foreground">
@@ -225,7 +229,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="mt-8 inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md shadow-accent/20 transition-colors hover:bg-accent-hover"
+            className="mt-8 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition-opacity hover:opacity-95"
           >
             Go to contact
           </Link>

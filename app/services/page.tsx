@@ -34,14 +34,14 @@ export default function ServicesPage() {
         description="Clear, documented service areas for business clients. Engagements are typically scoped in writing before work begins."
       />
       <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="space-y-6">
+        <div className="space-y-5">
           {sections.map(({ title, body }, i) => (
             <section
               key={title}
-              className="rounded-2xl border border-border bg-surface p-6 shadow-[var(--card-shadow)] sm:p-8"
+              className="rounded-2xl border border-white/[0.08] bg-surface p-6 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-8"
             >
               <div className="flex gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-subtle text-sm font-bold text-accent ring-1 ring-accent/15">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-500/10 text-sm font-bold text-sky-400 ring-1 ring-sky-500/20">
                   {i + 1}
                 </span>
                 <div>

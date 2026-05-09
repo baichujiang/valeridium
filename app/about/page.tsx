@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 function Row({ label, value }: { label: string; value: string }) {
   return (
-    <div className="grid gap-1 border-b border-border py-3.5 last:border-0 sm:grid-cols-[minmax(0,200px)_1fr] sm:gap-6">
+    <div className="grid gap-1 border-b border-white/[0.06] py-3.5 last:border-0 sm:grid-cols-[minmax(0,200px)_1fr] sm:gap-6">
       <dt className="text-xs font-semibold uppercase tracking-wider text-muted-light">
         {label}
       </dt>
-      <dd className="text-sm leading-relaxed text-foreground">{value}</dd>
+      <dd className="text-sm leading-relaxed text-foreground/95">{value}</dd>
     </div>
   );
 }
@@ -44,7 +44,7 @@ export default function AboutPage() {
         <h2 className="mt-14 text-xs font-semibold uppercase tracking-wider text-muted-light">
           Company information
         </h2>
-        <dl className="mt-4 rounded-2xl border border-border bg-surface p-5 shadow-[var(--card-shadow)] sm:p-8">
+        <dl className="mt-4 rounded-2xl border border-white/[0.08] bg-surface p-5 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-8">
           <Row label="Company name" value={company.legalName} />
           <Row label="Registry code" value={company.registryCode} />
           <Row label="Legal form" value={company.legalForm} />
