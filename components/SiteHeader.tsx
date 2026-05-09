@@ -5,9 +5,13 @@ import { usePathname } from "next/navigation";
 import { company, navLinks } from "@/lib/company";
 import { LogoMark } from "@/components/LogoMark";
 
-function linkClass(active: boolean) {
+/** Shared styles for primary nav links only (not the CTA). */
+const navLinkBase =
+  "inline-flex h-9 shrink-0 items-center justify-center rounded-lg px-3 text-sm font-medium transition-colors";
+
+function navLinkClass(active: boolean) {
   return [
-    "rounded-lg px-2.5 py-1.5 text-sm font-medium transition-colors",
+    navLinkBase,
     active
       ? "bg-white/10 text-white"
       : "text-muted hover:bg-white/5 hover:text-foreground",
@@ -37,16 +41,16 @@ export function SiteHeader() {
             {company.legalName}
           </span>
         </Link>
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1 sm:gap-2">
           <nav
-            className="flex items-center gap-0.5 sm:gap-1"
+            className="flex items-center gap-1"
             aria-label="Primary"
           >
             {navLinks.map(({ href, label }) => {
               const active =
                 href === "/" ? pathname === "/" : pathname.startsWith(href);
               return (
-                <Link key={href} href={href} className={linkClass(active)}>
+                <Link key={href} href={href} className={navLinkClass(active)}>
                   {label}
                 </Link>
               );
@@ -54,7 +58,7 @@ export function SiteHeader() {
           </nav>
           <a
             href={`mailto:${company.email}`}
-            className="ml-1 hidden rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 px-3.5 py-2 text-sm font-semibold text-white shadow-md shadow-sky-500/20 transition-opacity hover:opacity-95 sm:inline-flex"
+            className="ml-1 hidden h-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 px-4 text-sm font-semibold text-white shadow-md shadow-sky-500/20 transition-opacity hover:opacity-95 sm:inline-flex"
           >
             Get in touch
           </a>
