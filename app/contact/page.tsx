@@ -14,20 +14,20 @@ export default function ContactPage() {
         title="Contact us"
         description="For business inquiries, service questions, or support requests, please contact us by email. We aim to respond to relevant business messages in order of receipt."
       />
-      <div className="mx-auto max-w-lg px-4 py-14 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-white/[0.08] bg-surface p-8 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-10">
-          <p className="text-xs font-semibold uppercase tracking-wider text-muted-light">
+      <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
+        <section className="rounded-2xl border border-white/[0.08] bg-surface p-6 shadow-[var(--card-shadow)] backdrop-blur-sm sm:p-8">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-light">
             Email
-          </p>
+          </h2>
           <p className="mt-3">
             <a
               href={`mailto:${company.email}`}
-              className="text-xl font-semibold text-sky-400 transition-colors hover:text-sky-300"
+              className="text-lg font-semibold tracking-tight text-sky-400 transition-colors hover:text-sky-300 sm:text-xl"
             >
               {company.email}
             </a>
           </p>
-        </div>
+        </section>
       </div>
     </>
   );
